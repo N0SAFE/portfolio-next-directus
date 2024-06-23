@@ -784,6 +784,240 @@ export interface paths {
      */
     patch: operations["updateWebhook"];
   };
+  "/items/experience": {
+    /**
+     * List Items
+     * @description List the experience items.
+     */
+    get: operations["readItemsExperience"];
+    /**
+     * Create an Item
+     * @description Create a new experience item.
+     */
+    post: operations["createItemsExperience"];
+    /**
+     * Delete Multiple Items
+     * @description Delete multiple existing experience items.
+     */
+    delete: operations["deleteItemsExperience"];
+    /**
+     * Update Multiple Items
+     * @description Update multiple experience items at the same time.
+     */
+    patch: operations["updateItemsExperience"];
+  };
+  "/items/experience/{id}": {
+    /**
+     * Retrieve an Item
+     * @description Retrieve a single experience item by unique identifier.
+     */
+    get: operations["readSingleItemsExperience"];
+    /**
+     * Delete an Item
+     * @description Delete an existing experience item.
+     */
+    delete: operations["deleteSingleItemsExperience"];
+    /**
+     * Update an Item
+     * @description Update an existing experience item.
+     */
+    patch: operations["updateSingleItemsExperience"];
+  };
+  "/items/experience_skills": {
+    /**
+     * List Items
+     * @description List the experience_skills items.
+     */
+    get: operations["readItemsExperienceSkills"];
+    /**
+     * Create an Item
+     * @description Create a new experience_skills item.
+     */
+    post: operations["createItemsExperienceSkills"];
+    /**
+     * Delete Multiple Items
+     * @description Delete multiple existing experience_skills items.
+     */
+    delete: operations["deleteItemsExperienceSkills"];
+    /**
+     * Update Multiple Items
+     * @description Update multiple experience_skills items at the same time.
+     */
+    patch: operations["updateItemsExperienceSkills"];
+  };
+  "/items/experience_skills/{id}": {
+    /**
+     * Retrieve an Item
+     * @description Retrieve a single experience_skills item by unique identifier.
+     */
+    get: operations["readSingleItemsExperienceSkills"];
+    /**
+     * Delete an Item
+     * @description Delete an existing experience_skills item.
+     */
+    delete: operations["deleteSingleItemsExperienceSkills"];
+    /**
+     * Update an Item
+     * @description Update an existing experience_skills item.
+     */
+    patch: operations["updateSingleItemsExperienceSkills"];
+  };
+  "/items/project_screeshots": {
+    /**
+     * List Items
+     * @description List the project_screeshots items.
+     */
+    get: operations["readItemsProjectScreeshots"];
+    /**
+     * Create an Item
+     * @description Create a new project_screeshots item.
+     */
+    post: operations["createItemsProjectScreeshots"];
+    /**
+     * Delete Multiple Items
+     * @description Delete multiple existing project_screeshots items.
+     */
+    delete: operations["deleteItemsProjectScreeshots"];
+    /**
+     * Update Multiple Items
+     * @description Update multiple project_screeshots items at the same time.
+     */
+    patch: operations["updateItemsProjectScreeshots"];
+  };
+  "/items/project_screeshots/{id}": {
+    /**
+     * Retrieve an Item
+     * @description Retrieve a single project_screeshots item by unique identifier.
+     */
+    get: operations["readSingleItemsProjectScreeshots"];
+    /**
+     * Delete an Item
+     * @description Delete an existing project_screeshots item.
+     */
+    delete: operations["deleteSingleItemsProjectScreeshots"];
+    /**
+     * Update an Item
+     * @description Update an existing project_screeshots item.
+     */
+    patch: operations["updateSingleItemsProjectScreeshots"];
+  };
+  "/items/projects": {
+    /**
+     * List Items
+     * @description List the projects items.
+     */
+    get: operations["readItemsProjects"];
+    /**
+     * Create an Item
+     * @description Create a new projects item.
+     */
+    post: operations["createItemsProjects"];
+    /**
+     * Delete Multiple Items
+     * @description Delete multiple existing projects items.
+     */
+    delete: operations["deleteItemsProjects"];
+    /**
+     * Update Multiple Items
+     * @description Update multiple projects items at the same time.
+     */
+    patch: operations["updateItemsProjects"];
+  };
+  "/items/projects/{id}": {
+    /**
+     * Retrieve an Item
+     * @description Retrieve a single projects item by unique identifier.
+     */
+    get: operations["readSingleItemsProjects"];
+    /**
+     * Delete an Item
+     * @description Delete an existing projects item.
+     */
+    delete: operations["deleteSingleItemsProjects"];
+    /**
+     * Update an Item
+     * @description Update an existing projects item.
+     */
+    patch: operations["updateSingleItemsProjects"];
+  };
+  "/items/projects_skills": {
+    /**
+     * List Items
+     * @description List the projects_skills items.
+     */
+    get: operations["readItemsProjectsSkills"];
+    /**
+     * Create an Item
+     * @description Create a new projects_skills item.
+     */
+    post: operations["createItemsProjectsSkills"];
+    /**
+     * Delete Multiple Items
+     * @description Delete multiple existing projects_skills items.
+     */
+    delete: operations["deleteItemsProjectsSkills"];
+    /**
+     * Update Multiple Items
+     * @description Update multiple projects_skills items at the same time.
+     */
+    patch: operations["updateItemsProjectsSkills"];
+  };
+  "/items/projects_skills/{id}": {
+    /**
+     * Retrieve an Item
+     * @description Retrieve a single projects_skills item by unique identifier.
+     */
+    get: operations["readSingleItemsProjectsSkills"];
+    /**
+     * Delete an Item
+     * @description Delete an existing projects_skills item.
+     */
+    delete: operations["deleteSingleItemsProjectsSkills"];
+    /**
+     * Update an Item
+     * @description Update an existing projects_skills item.
+     */
+    patch: operations["updateSingleItemsProjectsSkills"];
+  };
+  "/items/skills": {
+    /**
+     * List Items
+     * @description List the skills items.
+     */
+    get: operations["readItemsSkills"];
+    /**
+     * Create an Item
+     * @description Create a new skills item.
+     */
+    post: operations["createItemsSkills"];
+    /**
+     * Delete Multiple Items
+     * @description Delete multiple existing skills items.
+     */
+    delete: operations["deleteItemsSkills"];
+    /**
+     * Update Multiple Items
+     * @description Update multiple skills items at the same time.
+     */
+    patch: operations["updateItemsSkills"];
+  };
+  "/items/skills/{id}": {
+    /**
+     * Retrieve an Item
+     * @description Retrieve a single skills item by unique identifier.
+     */
+    get: operations["readSingleItemsSkills"];
+    /**
+     * Delete an Item
+     * @description Delete an existing skills item.
+     */
+    delete: operations["deleteSingleItemsSkills"];
+    /**
+     * Update an Item
+     * @description Update an existing skills item.
+     */
+    patch: operations["updateSingleItemsSkills"];
+  };
 }
 
 export type webhooks = Record<string, never>;
@@ -1735,6 +1969,70 @@ export interface components {
       headers?: unknown;
       was_active_before_deprecation?: boolean;
       migrated_flow?: string | components["schemas"]["Flows"] | null;
+    };
+    ItemsExperience: {
+      id?: number;
+      sort?: number | null;
+      /** Format: timestamp */
+      date_created?: string | null;
+      /** Format: timestamp */
+      date_updated?: string | null;
+      /** Format: date */
+      start_at?: string | null;
+      /** Format: date */
+      end_at?: string | null;
+      description?: string | null;
+      office?: string | null;
+      used_skills?: ((number | components["schemas"]["ItemsExperienceSkills"])[]) | null;
+    };
+    ItemsExperienceSkills: {
+      id?: number;
+      experience_id?: number | components["schemas"]["ItemsExperience"] | null;
+      skills_id?: number | components["schemas"]["ItemsSkills"] | null;
+    };
+    ItemsProjectScreeshots: {
+      id?: number;
+      sort?: number | null;
+      /** Format: timestamp */
+      date_created?: string | null;
+      /** Format: timestamp */
+      date_updated?: string | null;
+      name?: string | null;
+      description?: string | null;
+      image?: string | components["schemas"]["Files"] | null;
+    };
+    ItemsProjects: {
+      /** Format: uuid */
+      id?: string;
+      sort?: number | null;
+      /** Format: timestamp */
+      date_created?: string | null;
+      /** Format: timestamp */
+      date_updated?: string | null;
+      name?: string | null;
+      image?: string | components["schemas"]["Files"] | null;
+      description?: string | null;
+      preview?: string | components["schemas"]["Files"] | null;
+      year?: number | null;
+      screenshot?: number | components["schemas"]["ItemsProjectScreeshots"] | null;
+      used_skills?: ((number | components["schemas"]["ItemsProjectsSkills"])[]) | null;
+    };
+    ItemsProjectsSkills: {
+      id?: number;
+      projects_id?: string | components["schemas"]["ItemsProjects"] | null;
+      skills_id?: number | components["schemas"]["ItemsSkills"] | null;
+    };
+    ItemsSkills: {
+      id?: number;
+      sort?: number | null;
+      /** Format: timestamp */
+      date_created?: string | null;
+      /** Format: timestamp */
+      date_updated?: string | null;
+      icon?: string | components["schemas"]["Files"] | null;
+      label?: string | null;
+      expertise?: string | null;
+      color?: string | null;
     };
   };
   responses: {
@@ -6107,8 +6405,1112 @@ export interface operations {
       404: components["responses"]["NotFoundError"];
     };
   };
+  /**
+   * List Items
+   * @description List the experience items.
+   */
+  readItemsExperience: {
+    parameters: {
+      query?: {
+        fields?: components["parameters"]["Fields"];
+        limit?: components["parameters"]["Limit"];
+        meta?: components["parameters"]["Meta"];
+        offset?: components["parameters"]["Offset"];
+        sort?: components["parameters"]["Sort"];
+        filter?: components["parameters"]["Filter"];
+        search?: components["parameters"]["Search"];
+      };
+    };
+    responses: {
+      /** @description Successful request */
+      200: {
+        content: {
+          "application/json": {
+            data?: components["schemas"]["ItemsExperience"][];
+            meta?: components["schemas"]["x-metadata"];
+          };
+        };
+      };
+      401: components["responses"]["UnauthorizedError"];
+    };
+  };
+  /**
+   * Create an Item
+   * @description Create a new experience item.
+   */
+  createItemsExperience: {
+    parameters: {
+      query?: {
+        meta?: components["parameters"]["Meta"];
+      };
+    };
+    requestBody?: {
+      content: {
+        "application/json": components["schemas"]["ItemsExperience"][] | components["schemas"]["ItemsExperience"];
+      };
+    };
+    responses: {
+      /** @description Successful request */
+      200: {
+        content: {
+          "application/json": {
+            data?: unknown;
+          };
+        };
+      };
+      401: components["responses"]["UnauthorizedError"];
+    };
+  };
+  /**
+   * Delete Multiple Items
+   * @description Delete multiple existing experience items.
+   */
+  deleteItemsExperience: {
+    responses: {
+      /** @description Successful request */
+      200: {
+        content: never;
+      };
+      401: components["responses"]["UnauthorizedError"];
+    };
+  };
+  /**
+   * Update Multiple Items
+   * @description Update multiple experience items at the same time.
+   */
+  updateItemsExperience: {
+    parameters: {
+      query?: {
+        fields?: components["parameters"]["Fields"];
+        limit?: components["parameters"]["Limit"];
+        meta?: components["parameters"]["Meta"];
+        offset?: components["parameters"]["Offset"];
+        sort?: components["parameters"]["Sort"];
+        filter?: components["parameters"]["Filter"];
+        search?: components["parameters"]["Search"];
+      };
+    };
+    requestBody?: {
+      content: {
+        "application/json": components["schemas"]["ItemsExperience"][] | components["schemas"]["ItemsExperience"];
+      };
+    };
+    responses: {
+      /** @description Successful request */
+      200: {
+        content: {
+          "application/json": {
+            data?: unknown;
+          };
+        };
+      };
+    };
+  };
+  /**
+   * Retrieve an Item
+   * @description Retrieve a single experience item by unique identifier.
+   */
+  readSingleItemsExperience: {
+    parameters: {
+      query?: {
+        fields?: components["parameters"]["Fields"];
+        meta?: components["parameters"]["Meta"];
+        version?: components["parameters"]["Version"];
+      };
+      path: {
+        /** @description Index of the item. */
+        id: number | string;
+      };
+    };
+    responses: {
+      /** @description Successful request */
+      200: {
+        content: {
+          "application/json": {
+            data?: components["schemas"]["ItemsExperience"];
+          };
+        };
+      };
+      401: components["responses"]["UnauthorizedError"];
+      404: components["responses"]["NotFoundError"];
+    };
+  };
+  /**
+   * Delete an Item
+   * @description Delete an existing experience item.
+   */
+  deleteSingleItemsExperience: {
+    parameters: {
+      path: {
+        /** @description Index of the item. */
+        id: number | string;
+      };
+    };
+    responses: {
+      /** @description Successful request */
+      200: {
+        content: never;
+      };
+      401: components["responses"]["UnauthorizedError"];
+      404: components["responses"]["NotFoundError"];
+    };
+  };
+  /**
+   * Update an Item
+   * @description Update an existing experience item.
+   */
+  updateSingleItemsExperience: {
+    parameters: {
+      query?: {
+        fields?: components["parameters"]["Fields"];
+        meta?: components["parameters"]["Meta"];
+      };
+      path: {
+        /** @description Index of the item. */
+        id: number | string;
+      };
+    };
+    requestBody?: {
+      content: {
+        "application/json": components["schemas"]["ItemsExperience"];
+      };
+    };
+    responses: {
+      /** @description Successful request */
+      200: {
+        content: {
+          "application/json": {
+            data?: components["schemas"]["ItemsExperience"];
+          };
+        };
+      };
+      401: components["responses"]["UnauthorizedError"];
+      404: components["responses"]["NotFoundError"];
+    };
+  };
+  /**
+   * List Items
+   * @description List the experience_skills items.
+   */
+  readItemsExperienceSkills: {
+    parameters: {
+      query?: {
+        fields?: components["parameters"]["Fields"];
+        limit?: components["parameters"]["Limit"];
+        meta?: components["parameters"]["Meta"];
+        offset?: components["parameters"]["Offset"];
+        sort?: components["parameters"]["Sort"];
+        filter?: components["parameters"]["Filter"];
+        search?: components["parameters"]["Search"];
+      };
+    };
+    responses: {
+      /** @description Successful request */
+      200: {
+        content: {
+          "application/json": {
+            data?: components["schemas"]["ItemsExperienceSkills"][];
+            meta?: components["schemas"]["x-metadata"];
+          };
+        };
+      };
+      401: components["responses"]["UnauthorizedError"];
+    };
+  };
+  /**
+   * Create an Item
+   * @description Create a new experience_skills item.
+   */
+  createItemsExperienceSkills: {
+    parameters: {
+      query?: {
+        meta?: components["parameters"]["Meta"];
+      };
+    };
+    requestBody?: {
+      content: {
+        "application/json": components["schemas"]["ItemsExperienceSkills"][] | components["schemas"]["ItemsExperienceSkills"];
+      };
+    };
+    responses: {
+      /** @description Successful request */
+      200: {
+        content: {
+          "application/json": {
+            data?: unknown;
+          };
+        };
+      };
+      401: components["responses"]["UnauthorizedError"];
+    };
+  };
+  /**
+   * Delete Multiple Items
+   * @description Delete multiple existing experience_skills items.
+   */
+  deleteItemsExperienceSkills: {
+    responses: {
+      /** @description Successful request */
+      200: {
+        content: never;
+      };
+      401: components["responses"]["UnauthorizedError"];
+    };
+  };
+  /**
+   * Update Multiple Items
+   * @description Update multiple experience_skills items at the same time.
+   */
+  updateItemsExperienceSkills: {
+    parameters: {
+      query?: {
+        fields?: components["parameters"]["Fields"];
+        limit?: components["parameters"]["Limit"];
+        meta?: components["parameters"]["Meta"];
+        offset?: components["parameters"]["Offset"];
+        sort?: components["parameters"]["Sort"];
+        filter?: components["parameters"]["Filter"];
+        search?: components["parameters"]["Search"];
+      };
+    };
+    requestBody?: {
+      content: {
+        "application/json": components["schemas"]["ItemsExperienceSkills"][] | components["schemas"]["ItemsExperienceSkills"];
+      };
+    };
+    responses: {
+      /** @description Successful request */
+      200: {
+        content: {
+          "application/json": {
+            data?: unknown;
+          };
+        };
+      };
+    };
+  };
+  /**
+   * Retrieve an Item
+   * @description Retrieve a single experience_skills item by unique identifier.
+   */
+  readSingleItemsExperienceSkills: {
+    parameters: {
+      query?: {
+        fields?: components["parameters"]["Fields"];
+        meta?: components["parameters"]["Meta"];
+        version?: components["parameters"]["Version"];
+      };
+      path: {
+        /** @description Index of the item. */
+        id: number | string;
+      };
+    };
+    responses: {
+      /** @description Successful request */
+      200: {
+        content: {
+          "application/json": {
+            data?: components["schemas"]["ItemsExperienceSkills"];
+          };
+        };
+      };
+      401: components["responses"]["UnauthorizedError"];
+      404: components["responses"]["NotFoundError"];
+    };
+  };
+  /**
+   * Delete an Item
+   * @description Delete an existing experience_skills item.
+   */
+  deleteSingleItemsExperienceSkills: {
+    parameters: {
+      path: {
+        /** @description Index of the item. */
+        id: number | string;
+      };
+    };
+    responses: {
+      /** @description Successful request */
+      200: {
+        content: never;
+      };
+      401: components["responses"]["UnauthorizedError"];
+      404: components["responses"]["NotFoundError"];
+    };
+  };
+  /**
+   * Update an Item
+   * @description Update an existing experience_skills item.
+   */
+  updateSingleItemsExperienceSkills: {
+    parameters: {
+      query?: {
+        fields?: components["parameters"]["Fields"];
+        meta?: components["parameters"]["Meta"];
+      };
+      path: {
+        /** @description Index of the item. */
+        id: number | string;
+      };
+    };
+    requestBody?: {
+      content: {
+        "application/json": components["schemas"]["ItemsExperienceSkills"];
+      };
+    };
+    responses: {
+      /** @description Successful request */
+      200: {
+        content: {
+          "application/json": {
+            data?: components["schemas"]["ItemsExperienceSkills"];
+          };
+        };
+      };
+      401: components["responses"]["UnauthorizedError"];
+      404: components["responses"]["NotFoundError"];
+    };
+  };
+  /**
+   * List Items
+   * @description List the project_screeshots items.
+   */
+  readItemsProjectScreeshots: {
+    parameters: {
+      query?: {
+        fields?: components["parameters"]["Fields"];
+        limit?: components["parameters"]["Limit"];
+        meta?: components["parameters"]["Meta"];
+        offset?: components["parameters"]["Offset"];
+        sort?: components["parameters"]["Sort"];
+        filter?: components["parameters"]["Filter"];
+        search?: components["parameters"]["Search"];
+      };
+    };
+    responses: {
+      /** @description Successful request */
+      200: {
+        content: {
+          "application/json": {
+            data?: components["schemas"]["ItemsProjectScreeshots"][];
+            meta?: components["schemas"]["x-metadata"];
+          };
+        };
+      };
+      401: components["responses"]["UnauthorizedError"];
+    };
+  };
+  /**
+   * Create an Item
+   * @description Create a new project_screeshots item.
+   */
+  createItemsProjectScreeshots: {
+    parameters: {
+      query?: {
+        meta?: components["parameters"]["Meta"];
+      };
+    };
+    requestBody?: {
+      content: {
+        "application/json": components["schemas"]["ItemsProjectScreeshots"][] | components["schemas"]["ItemsProjectScreeshots"];
+      };
+    };
+    responses: {
+      /** @description Successful request */
+      200: {
+        content: {
+          "application/json": {
+            data?: unknown;
+          };
+        };
+      };
+      401: components["responses"]["UnauthorizedError"];
+    };
+  };
+  /**
+   * Delete Multiple Items
+   * @description Delete multiple existing project_screeshots items.
+   */
+  deleteItemsProjectScreeshots: {
+    responses: {
+      /** @description Successful request */
+      200: {
+        content: never;
+      };
+      401: components["responses"]["UnauthorizedError"];
+    };
+  };
+  /**
+   * Update Multiple Items
+   * @description Update multiple project_screeshots items at the same time.
+   */
+  updateItemsProjectScreeshots: {
+    parameters: {
+      query?: {
+        fields?: components["parameters"]["Fields"];
+        limit?: components["parameters"]["Limit"];
+        meta?: components["parameters"]["Meta"];
+        offset?: components["parameters"]["Offset"];
+        sort?: components["parameters"]["Sort"];
+        filter?: components["parameters"]["Filter"];
+        search?: components["parameters"]["Search"];
+      };
+    };
+    requestBody?: {
+      content: {
+        "application/json": components["schemas"]["ItemsProjectScreeshots"][] | components["schemas"]["ItemsProjectScreeshots"];
+      };
+    };
+    responses: {
+      /** @description Successful request */
+      200: {
+        content: {
+          "application/json": {
+            data?: unknown;
+          };
+        };
+      };
+    };
+  };
+  /**
+   * Retrieve an Item
+   * @description Retrieve a single project_screeshots item by unique identifier.
+   */
+  readSingleItemsProjectScreeshots: {
+    parameters: {
+      query?: {
+        fields?: components["parameters"]["Fields"];
+        meta?: components["parameters"]["Meta"];
+        version?: components["parameters"]["Version"];
+      };
+      path: {
+        /** @description Index of the item. */
+        id: number | string;
+      };
+    };
+    responses: {
+      /** @description Successful request */
+      200: {
+        content: {
+          "application/json": {
+            data?: components["schemas"]["ItemsProjectScreeshots"];
+          };
+        };
+      };
+      401: components["responses"]["UnauthorizedError"];
+      404: components["responses"]["NotFoundError"];
+    };
+  };
+  /**
+   * Delete an Item
+   * @description Delete an existing project_screeshots item.
+   */
+  deleteSingleItemsProjectScreeshots: {
+    parameters: {
+      path: {
+        /** @description Index of the item. */
+        id: number | string;
+      };
+    };
+    responses: {
+      /** @description Successful request */
+      200: {
+        content: never;
+      };
+      401: components["responses"]["UnauthorizedError"];
+      404: components["responses"]["NotFoundError"];
+    };
+  };
+  /**
+   * Update an Item
+   * @description Update an existing project_screeshots item.
+   */
+  updateSingleItemsProjectScreeshots: {
+    parameters: {
+      query?: {
+        fields?: components["parameters"]["Fields"];
+        meta?: components["parameters"]["Meta"];
+      };
+      path: {
+        /** @description Index of the item. */
+        id: number | string;
+      };
+    };
+    requestBody?: {
+      content: {
+        "application/json": components["schemas"]["ItemsProjectScreeshots"];
+      };
+    };
+    responses: {
+      /** @description Successful request */
+      200: {
+        content: {
+          "application/json": {
+            data?: components["schemas"]["ItemsProjectScreeshots"];
+          };
+        };
+      };
+      401: components["responses"]["UnauthorizedError"];
+      404: components["responses"]["NotFoundError"];
+    };
+  };
+  /**
+   * List Items
+   * @description List the projects items.
+   */
+  readItemsProjects: {
+    parameters: {
+      query?: {
+        fields?: components["parameters"]["Fields"];
+        limit?: components["parameters"]["Limit"];
+        meta?: components["parameters"]["Meta"];
+        offset?: components["parameters"]["Offset"];
+        sort?: components["parameters"]["Sort"];
+        filter?: components["parameters"]["Filter"];
+        search?: components["parameters"]["Search"];
+      };
+    };
+    responses: {
+      /** @description Successful request */
+      200: {
+        content: {
+          "application/json": {
+            data?: components["schemas"]["ItemsProjects"][];
+            meta?: components["schemas"]["x-metadata"];
+          };
+        };
+      };
+      401: components["responses"]["UnauthorizedError"];
+    };
+  };
+  /**
+   * Create an Item
+   * @description Create a new projects item.
+   */
+  createItemsProjects: {
+    parameters: {
+      query?: {
+        meta?: components["parameters"]["Meta"];
+      };
+    };
+    requestBody?: {
+      content: {
+        "application/json": components["schemas"]["ItemsProjects"][] | components["schemas"]["ItemsProjects"];
+      };
+    };
+    responses: {
+      /** @description Successful request */
+      200: {
+        content: {
+          "application/json": {
+            data?: unknown;
+          };
+        };
+      };
+      401: components["responses"]["UnauthorizedError"];
+    };
+  };
+  /**
+   * Delete Multiple Items
+   * @description Delete multiple existing projects items.
+   */
+  deleteItemsProjects: {
+    responses: {
+      /** @description Successful request */
+      200: {
+        content: never;
+      };
+      401: components["responses"]["UnauthorizedError"];
+    };
+  };
+  /**
+   * Update Multiple Items
+   * @description Update multiple projects items at the same time.
+   */
+  updateItemsProjects: {
+    parameters: {
+      query?: {
+        fields?: components["parameters"]["Fields"];
+        limit?: components["parameters"]["Limit"];
+        meta?: components["parameters"]["Meta"];
+        offset?: components["parameters"]["Offset"];
+        sort?: components["parameters"]["Sort"];
+        filter?: components["parameters"]["Filter"];
+        search?: components["parameters"]["Search"];
+      };
+    };
+    requestBody?: {
+      content: {
+        "application/json": components["schemas"]["ItemsProjects"][] | components["schemas"]["ItemsProjects"];
+      };
+    };
+    responses: {
+      /** @description Successful request */
+      200: {
+        content: {
+          "application/json": {
+            data?: unknown;
+          };
+        };
+      };
+    };
+  };
+  /**
+   * Retrieve an Item
+   * @description Retrieve a single projects item by unique identifier.
+   */
+  readSingleItemsProjects: {
+    parameters: {
+      query?: {
+        fields?: components["parameters"]["Fields"];
+        meta?: components["parameters"]["Meta"];
+        version?: components["parameters"]["Version"];
+      };
+      path: {
+        /** @description Index of the item. */
+        id: number | string;
+      };
+    };
+    responses: {
+      /** @description Successful request */
+      200: {
+        content: {
+          "application/json": {
+            data?: components["schemas"]["ItemsProjects"];
+          };
+        };
+      };
+      401: components["responses"]["UnauthorizedError"];
+      404: components["responses"]["NotFoundError"];
+    };
+  };
+  /**
+   * Delete an Item
+   * @description Delete an existing projects item.
+   */
+  deleteSingleItemsProjects: {
+    parameters: {
+      path: {
+        /** @description Index of the item. */
+        id: number | string;
+      };
+    };
+    responses: {
+      /** @description Successful request */
+      200: {
+        content: never;
+      };
+      401: components["responses"]["UnauthorizedError"];
+      404: components["responses"]["NotFoundError"];
+    };
+  };
+  /**
+   * Update an Item
+   * @description Update an existing projects item.
+   */
+  updateSingleItemsProjects: {
+    parameters: {
+      query?: {
+        fields?: components["parameters"]["Fields"];
+        meta?: components["parameters"]["Meta"];
+      };
+      path: {
+        /** @description Index of the item. */
+        id: number | string;
+      };
+    };
+    requestBody?: {
+      content: {
+        "application/json": components["schemas"]["ItemsProjects"];
+      };
+    };
+    responses: {
+      /** @description Successful request */
+      200: {
+        content: {
+          "application/json": {
+            data?: components["schemas"]["ItemsProjects"];
+          };
+        };
+      };
+      401: components["responses"]["UnauthorizedError"];
+      404: components["responses"]["NotFoundError"];
+    };
+  };
+  /**
+   * List Items
+   * @description List the projects_skills items.
+   */
+  readItemsProjectsSkills: {
+    parameters: {
+      query?: {
+        fields?: components["parameters"]["Fields"];
+        limit?: components["parameters"]["Limit"];
+        meta?: components["parameters"]["Meta"];
+        offset?: components["parameters"]["Offset"];
+        sort?: components["parameters"]["Sort"];
+        filter?: components["parameters"]["Filter"];
+        search?: components["parameters"]["Search"];
+      };
+    };
+    responses: {
+      /** @description Successful request */
+      200: {
+        content: {
+          "application/json": {
+            data?: components["schemas"]["ItemsProjectsSkills"][];
+            meta?: components["schemas"]["x-metadata"];
+          };
+        };
+      };
+      401: components["responses"]["UnauthorizedError"];
+    };
+  };
+  /**
+   * Create an Item
+   * @description Create a new projects_skills item.
+   */
+  createItemsProjectsSkills: {
+    parameters: {
+      query?: {
+        meta?: components["parameters"]["Meta"];
+      };
+    };
+    requestBody?: {
+      content: {
+        "application/json": components["schemas"]["ItemsProjectsSkills"][] | components["schemas"]["ItemsProjectsSkills"];
+      };
+    };
+    responses: {
+      /** @description Successful request */
+      200: {
+        content: {
+          "application/json": {
+            data?: unknown;
+          };
+        };
+      };
+      401: components["responses"]["UnauthorizedError"];
+    };
+  };
+  /**
+   * Delete Multiple Items
+   * @description Delete multiple existing projects_skills items.
+   */
+  deleteItemsProjectsSkills: {
+    responses: {
+      /** @description Successful request */
+      200: {
+        content: never;
+      };
+      401: components["responses"]["UnauthorizedError"];
+    };
+  };
+  /**
+   * Update Multiple Items
+   * @description Update multiple projects_skills items at the same time.
+   */
+  updateItemsProjectsSkills: {
+    parameters: {
+      query?: {
+        fields?: components["parameters"]["Fields"];
+        limit?: components["parameters"]["Limit"];
+        meta?: components["parameters"]["Meta"];
+        offset?: components["parameters"]["Offset"];
+        sort?: components["parameters"]["Sort"];
+        filter?: components["parameters"]["Filter"];
+        search?: components["parameters"]["Search"];
+      };
+    };
+    requestBody?: {
+      content: {
+        "application/json": components["schemas"]["ItemsProjectsSkills"][] | components["schemas"]["ItemsProjectsSkills"];
+      };
+    };
+    responses: {
+      /** @description Successful request */
+      200: {
+        content: {
+          "application/json": {
+            data?: unknown;
+          };
+        };
+      };
+    };
+  };
+  /**
+   * Retrieve an Item
+   * @description Retrieve a single projects_skills item by unique identifier.
+   */
+  readSingleItemsProjectsSkills: {
+    parameters: {
+      query?: {
+        fields?: components["parameters"]["Fields"];
+        meta?: components["parameters"]["Meta"];
+        version?: components["parameters"]["Version"];
+      };
+      path: {
+        /** @description Index of the item. */
+        id: number | string;
+      };
+    };
+    responses: {
+      /** @description Successful request */
+      200: {
+        content: {
+          "application/json": {
+            data?: components["schemas"]["ItemsProjectsSkills"];
+          };
+        };
+      };
+      401: components["responses"]["UnauthorizedError"];
+      404: components["responses"]["NotFoundError"];
+    };
+  };
+  /**
+   * Delete an Item
+   * @description Delete an existing projects_skills item.
+   */
+  deleteSingleItemsProjectsSkills: {
+    parameters: {
+      path: {
+        /** @description Index of the item. */
+        id: number | string;
+      };
+    };
+    responses: {
+      /** @description Successful request */
+      200: {
+        content: never;
+      };
+      401: components["responses"]["UnauthorizedError"];
+      404: components["responses"]["NotFoundError"];
+    };
+  };
+  /**
+   * Update an Item
+   * @description Update an existing projects_skills item.
+   */
+  updateSingleItemsProjectsSkills: {
+    parameters: {
+      query?: {
+        fields?: components["parameters"]["Fields"];
+        meta?: components["parameters"]["Meta"];
+      };
+      path: {
+        /** @description Index of the item. */
+        id: number | string;
+      };
+    };
+    requestBody?: {
+      content: {
+        "application/json": components["schemas"]["ItemsProjectsSkills"];
+      };
+    };
+    responses: {
+      /** @description Successful request */
+      200: {
+        content: {
+          "application/json": {
+            data?: components["schemas"]["ItemsProjectsSkills"];
+          };
+        };
+      };
+      401: components["responses"]["UnauthorizedError"];
+      404: components["responses"]["NotFoundError"];
+    };
+  };
+  /**
+   * List Items
+   * @description List the skills items.
+   */
+  readItemsSkills: {
+    parameters: {
+      query?: {
+        fields?: components["parameters"]["Fields"];
+        limit?: components["parameters"]["Limit"];
+        meta?: components["parameters"]["Meta"];
+        offset?: components["parameters"]["Offset"];
+        sort?: components["parameters"]["Sort"];
+        filter?: components["parameters"]["Filter"];
+        search?: components["parameters"]["Search"];
+      };
+    };
+    responses: {
+      /** @description Successful request */
+      200: {
+        content: {
+          "application/json": {
+            data?: components["schemas"]["ItemsSkills"][];
+            meta?: components["schemas"]["x-metadata"];
+          };
+        };
+      };
+      401: components["responses"]["UnauthorizedError"];
+    };
+  };
+  /**
+   * Create an Item
+   * @description Create a new skills item.
+   */
+  createItemsSkills: {
+    parameters: {
+      query?: {
+        meta?: components["parameters"]["Meta"];
+      };
+    };
+    requestBody?: {
+      content: {
+        "application/json": components["schemas"]["ItemsSkills"][] | components["schemas"]["ItemsSkills"];
+      };
+    };
+    responses: {
+      /** @description Successful request */
+      200: {
+        content: {
+          "application/json": {
+            data?: unknown;
+          };
+        };
+      };
+      401: components["responses"]["UnauthorizedError"];
+    };
+  };
+  /**
+   * Delete Multiple Items
+   * @description Delete multiple existing skills items.
+   */
+  deleteItemsSkills: {
+    responses: {
+      /** @description Successful request */
+      200: {
+        content: never;
+      };
+      401: components["responses"]["UnauthorizedError"];
+    };
+  };
+  /**
+   * Update Multiple Items
+   * @description Update multiple skills items at the same time.
+   */
+  updateItemsSkills: {
+    parameters: {
+      query?: {
+        fields?: components["parameters"]["Fields"];
+        limit?: components["parameters"]["Limit"];
+        meta?: components["parameters"]["Meta"];
+        offset?: components["parameters"]["Offset"];
+        sort?: components["parameters"]["Sort"];
+        filter?: components["parameters"]["Filter"];
+        search?: components["parameters"]["Search"];
+      };
+    };
+    requestBody?: {
+      content: {
+        "application/json": components["schemas"]["ItemsSkills"][] | components["schemas"]["ItemsSkills"];
+      };
+    };
+    responses: {
+      /** @description Successful request */
+      200: {
+        content: {
+          "application/json": {
+            data?: unknown;
+          };
+        };
+      };
+    };
+  };
+  /**
+   * Retrieve an Item
+   * @description Retrieve a single skills item by unique identifier.
+   */
+  readSingleItemsSkills: {
+    parameters: {
+      query?: {
+        fields?: components["parameters"]["Fields"];
+        meta?: components["parameters"]["Meta"];
+        version?: components["parameters"]["Version"];
+      };
+      path: {
+        /** @description Index of the item. */
+        id: number | string;
+      };
+    };
+    responses: {
+      /** @description Successful request */
+      200: {
+        content: {
+          "application/json": {
+            data?: components["schemas"]["ItemsSkills"];
+          };
+        };
+      };
+      401: components["responses"]["UnauthorizedError"];
+      404: components["responses"]["NotFoundError"];
+    };
+  };
+  /**
+   * Delete an Item
+   * @description Delete an existing skills item.
+   */
+  deleteSingleItemsSkills: {
+    parameters: {
+      path: {
+        /** @description Index of the item. */
+        id: number | string;
+      };
+    };
+    responses: {
+      /** @description Successful request */
+      200: {
+        content: never;
+      };
+      401: components["responses"]["UnauthorizedError"];
+      404: components["responses"]["NotFoundError"];
+    };
+  };
+  /**
+   * Update an Item
+   * @description Update an existing skills item.
+   */
+  updateSingleItemsSkills: {
+    parameters: {
+      query?: {
+        fields?: components["parameters"]["Fields"];
+        meta?: components["parameters"]["Meta"];
+      };
+      path: {
+        /** @description Index of the item. */
+        id: number | string;
+      };
+    };
+    requestBody?: {
+      content: {
+        "application/json": components["schemas"]["ItemsSkills"];
+      };
+    };
+    responses: {
+      /** @description Successful request */
+      200: {
+        content: {
+          "application/json": {
+            data?: components["schemas"]["ItemsSkills"];
+          };
+        };
+      };
+      401: components["responses"]["UnauthorizedError"];
+      404: components["responses"]["NotFoundError"];
+    };
+  };
 }
 
 
 export type ApiCollections = {
+  experience: components["schemas"]["ItemsExperience"][];
+  experience_skills: components["schemas"]["ItemsExperienceSkills"][];
+  project_screeshots: components["schemas"]["ItemsProjectScreeshots"][];
+  projects: components["schemas"]["ItemsProjects"][];
+  projects_skills: components["schemas"]["ItemsProjectsSkills"][];
+  skills: components["schemas"]["ItemsSkills"][];
 };
