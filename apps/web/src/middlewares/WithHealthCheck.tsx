@@ -36,14 +36,13 @@ const withHealthCheck: MiddlewareFactory = (next: NextMiddleware) => {
           }
         }
       } catch (e) {
-        console.log("error", e);
         if (request.nextUrl.pathname === errorPageRenderingPath) {
           return NextResponse.next();
         } else {
           return NextResponse.redirect(
             request.nextUrl.origin +
               errorPageRenderingPath +
-              `?from=${encodeURIComponent(request.url)}`,
+              `?json=${JSON.stringify(e)}&from=${encodeURIComponent(request.url)}`,
           );
         }
       }

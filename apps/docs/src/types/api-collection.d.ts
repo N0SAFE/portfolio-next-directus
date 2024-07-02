@@ -2000,6 +2000,7 @@ export interface components {
       name?: string | null;
       description?: string | null;
       image?: string | components["schemas"]["Files"] | null;
+      project?: string | components["schemas"]["ItemsProjects"] | null;
     };
     ItemsProjects: {
       /** Format: uuid */
@@ -2009,13 +2010,19 @@ export interface components {
       date_created?: string | null;
       /** Format: timestamp */
       date_updated?: string | null;
-      name?: string | null;
       image?: string | components["schemas"]["Files"] | null;
       description?: string | null;
       preview?: string | components["schemas"]["Files"] | null;
       year?: number | null;
-      screenshot?: number | components["schemas"]["ItemsProjectScreeshots"] | null;
+      url?: string;
+      type?: string;
+      icon?: string | components["schemas"]["Files"] | null;
+      web?: string;
+      github?: string;
+      title?: string;
+      status?: string;
       used_skills?: ((number | components["schemas"]["ItemsProjectsSkills"])[]) | null;
+      screenshots?: ((number | components["schemas"]["ItemsProjectScreeshots"])[]) | null;
     };
     ItemsProjectsSkills: {
       id?: number;
@@ -2029,10 +2036,10 @@ export interface components {
       date_created?: string | null;
       /** Format: timestamp */
       date_updated?: string | null;
-      icon?: string | components["schemas"]["Files"] | null;
-      label?: string | null;
-      expertise?: string | null;
-      color?: string | null;
+      icon?: string | components["schemas"]["Files"];
+      label?: string;
+      expertise?: string;
+      color?: string;
     };
   };
   responses: {

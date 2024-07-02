@@ -13,6 +13,7 @@ import * as AuthloginRoute from "@/app/auth/login/page.info";
 import * as AuthmeRoute from "@/app/auth/me/page.info";
 import * as MiddlewareerrorenvRoute from "@/app/middleware/error/env/page.info";
 import * as MiddlewareerrorhealthCheckRoute from "@/app/middleware/error/healthCheck/page.info";
+import * as AppprojectsidRoute from "@/app/projects/[id]/page.info";
 
 export const Home = makeRoute(
   "/",
@@ -61,6 +62,13 @@ export const MiddlewareerrorhealthCheck = makeRoute(
   {
     ...defaultInfo,
     ...MiddlewareerrorhealthCheckRoute.Route
+  }
+);
+export const Appprojectsid = makeRoute(
+  "/projects/[id]",
+  {
+    ...defaultInfo,
+    ...AppprojectsidRoute.Route
   }
 );
 

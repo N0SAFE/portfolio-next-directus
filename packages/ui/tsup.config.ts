@@ -6,6 +6,6 @@ export default defineTsupConfig((options) => ({
   dts: true,
   clean: true,
   minify: true,
-  external: ["react", "react-dom"],
+  external: ["react", "react-dom", 'next'],
   ...options,
 }));

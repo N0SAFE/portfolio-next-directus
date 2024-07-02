@@ -865,6 +865,45 @@ fields:
       has_auto_increment: false
       foreign_key_table: directus_files
       foreign_key_column: id
+  - collection: project_screeshots
+    field: project
+    type: string
+    meta:
+      collection: project_screeshots
+      conditions: null
+      display: null
+      display_options: null
+      field: project
+      group: null
+      hidden: false
+      interface: select-dropdown-m2o
+      note: null
+      options: null
+      readonly: false
+      required: true
+      sort: 8
+      special:
+        - m2o
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: project
+      table: project_screeshots
+      data_type: char
+      default_value: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: projects
+      foreign_key_column: id
   - collection: projects
     field: id
     type: uuid
@@ -1023,44 +1062,6 @@ fields:
       foreign_key_table: null
       foreign_key_column: null
   - collection: projects
-    field: name
-    type: string
-    meta:
-      collection: projects
-      conditions: null
-      display: null
-      display_options: null
-      field: name
-      group: null
-      hidden: false
-      interface: input
-      note: null
-      options: null
-      readonly: false
-      required: true
-      sort: 6
-      special: null
-      translations: null
-      validation: null
-      validation_message: null
-      width: full
-    schema:
-      name: name
-      table: projects
-      data_type: varchar
-      default_value: null
-      max_length: 255
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-  - collection: projects
     field: image
     type: uuid
     meta:
@@ -1076,7 +1077,7 @@ fields:
       options: null
       readonly: false
       required: true
-      sort: 7
+      sort: 9
       special:
         - file
       translations: null
@@ -1115,7 +1116,7 @@ fields:
       options: null
       readonly: false
       required: true
-      sort: 8
+      sort: 10
       special: null
       translations: null
       validation: null
@@ -1153,7 +1154,7 @@ fields:
       options: null
       readonly: false
       required: true
-      sort: 9
+      sort: 13
       special:
         - file
       translations: null
@@ -1194,7 +1195,7 @@ fields:
         min: 2000
       readonly: false
       required: true
-      sort: 10
+      sort: 14
       special: null
       translations: null
       validation: null
@@ -1217,46 +1218,6 @@ fields:
       foreign_key_table: null
       foreign_key_column: null
   - collection: projects
-    field: screenshot
-    type: integer
-    meta:
-      collection: projects
-      conditions: null
-      display: null
-      display_options: null
-      field: screenshot
-      group: null
-      hidden: false
-      interface: select-dropdown-m2o
-      note: null
-      options:
-        template: '{{id}}{{name}}'
-      readonly: false
-      required: false
-      sort: 11
-      special:
-        - m2o
-      translations: null
-      validation: null
-      validation_message: null
-      width: full
-    schema:
-      name: screenshot
-      table: projects
-      data_type: int unsigned
-      default_value: null
-      max_length: null
-      numeric_precision: 10
-      numeric_scale: 0
-      is_nullable: true
-      is_unique: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: project_screeshots
-      foreign_key_column: id
-  - collection: projects
     field: used_skills
     type: alias
     meta:
@@ -1272,6 +1233,329 @@ fields:
       readonly: false
       hidden: false
       sort: 5
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: projects
+    field: url
+    type: string
+    meta:
+      collection: projects
+      conditions: null
+      display: null
+      display_options: null
+      field: url
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: true
+      sort: 15
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: url
+      table: projects
+      data_type: varchar
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: false
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: projects
+    field: type
+    type: string
+    meta:
+      collection: projects
+      conditions: null
+      display: null
+      display_options: null
+      field: type
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: true
+      sort: 8
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: type
+      table: projects
+      data_type: varchar
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: false
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: projects
+    field: icon
+    type: uuid
+    meta:
+      collection: projects
+      conditions: null
+      display: null
+      display_options: null
+      field: icon
+      group: null
+      hidden: false
+      interface: file-image
+      note: null
+      options: null
+      readonly: false
+      required: true
+      sort: 12
+      special:
+        - file
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: icon
+      table: projects
+      data_type: char
+      default_value: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: directus_files
+      foreign_key_column: id
+  - collection: projects
+    field: links
+    type: alias
+    meta:
+      collection: projects
+      field: links
+      special:
+        - alias
+        - no-data
+        - group
+      interface: group-raw
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 16
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: projects
+    field: web
+    type: string
+    meta:
+      collection: projects
+      conditions: null
+      display: null
+      display_options: null
+      field: web
+      group: links
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: true
+      sort: 1
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: web
+      table: projects
+      data_type: varchar
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: false
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: projects
+    field: github
+    type: string
+    meta:
+      collection: projects
+      conditions: null
+      display: null
+      display_options: null
+      field: github
+      group: links
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: true
+      sort: 2
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: github
+      table: projects
+      data_type: varchar
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: false
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: projects
+    field: title
+    type: string
+    meta:
+      collection: projects
+      conditions: null
+      display: null
+      display_options: null
+      field: title
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: true
+      sort: 6
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: title
+      table: projects
+      data_type: varchar
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: false
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: projects
+    field: status
+    type: string
+    meta:
+      collection: projects
+      conditions: null
+      display: null
+      display_options: null
+      field: status
+      group: null
+      hidden: false
+      interface: select-dropdown
+      note: null
+      options:
+        choices:
+          - icon: check
+            text: complete
+            value: complete
+          - icon: pending_actions
+            text: pending
+            value: pending
+      readonly: false
+      required: true
+      sort: 7
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: status
+      table: projects
+      data_type: varchar
+      default_value: pending
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: false
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: projects
+    field: screenshots
+    type: alias
+    meta:
+      collection: projects
+      field: screenshots
+      special:
+        - o2m
+      interface: list-o2m
+      options:
+        enableLink: true
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 11
       width: full
       translations: null
       note: null
@@ -1582,7 +1866,7 @@ fields:
       max_length: 36
       numeric_precision: null
       numeric_scale: null
-      is_nullable: true
+      is_nullable: false
       is_unique: false
       is_primary_key: false
       is_generated: false
@@ -1622,7 +1906,7 @@ fields:
       max_length: 255
       numeric_precision: null
       numeric_scale: null
-      is_nullable: true
+      is_nullable: false
       is_unique: false
       is_primary_key: false
       is_generated: false
@@ -1676,7 +1960,7 @@ fields:
       max_length: 255
       numeric_precision: null
       numeric_scale: null
-      is_nullable: true
+      is_nullable: false
       is_unique: false
       is_primary_key: false
       is_generated: false
@@ -1715,7 +1999,7 @@ fields:
       max_length: 255
       numeric_precision: null
       numeric_scale: null
-      is_nullable: true
+      is_nullable: false
       is_unique: false
       is_primary_key: false
       is_generated: false
@@ -1811,6 +2095,27 @@ relations:
       constraint_name: project_screeshots_image_foreign
       on_update: NO ACTION
       on_delete: SET NULL
+  - collection: project_screeshots
+    field: project
+    related_collection: projects
+    meta:
+      junction_field: null
+      many_collection: project_screeshots
+      many_field: project
+      one_allowed_collections: null
+      one_collection: projects
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: screenshots
+      sort_field: null
+    schema:
+      table: project_screeshots
+      column: project
+      foreign_key_table: projects
+      foreign_key_column: id
+      constraint_name: project_screeshots_project_foreign
+      on_update: NO ACTION
+      on_delete: SET NULL
   - collection: projects
     field: image
     related_collection: directus_files
@@ -1854,26 +2159,26 @@ relations:
       on_update: NO ACTION
       on_delete: SET NULL
   - collection: projects
-    field: screenshot
-    related_collection: project_screeshots
+    field: icon
+    related_collection: directus_files
     meta:
       junction_field: null
       many_collection: projects
-      many_field: screenshot
+      many_field: icon
       one_allowed_collections: null
-      one_collection: project_screeshots
+      one_collection: directus_files
       one_collection_field: null
       one_deselect_action: nullify
       one_field: null
       sort_field: null
     schema:
       table: projects
-      column: screenshot
-      foreign_key_table: project_screeshots
+      column: icon
+      foreign_key_table: directus_files
       foreign_key_column: id
-      constraint_name: projects_screenshot_foreign
+      constraint_name: projects_icon_foreign
       on_update: NO ACTION
-      on_delete: SET NULL
+      on_delete: NO ACTION
   - collection: projects_skills
     field: skills_id
     related_collection: skills
@@ -1936,4 +2241,4 @@ relations:
       foreign_key_column: id
       constraint_name: skills_icon_foreign
       on_update: NO ACTION
-      on_delete: SET NULL
+      on_delete: NO ACTION

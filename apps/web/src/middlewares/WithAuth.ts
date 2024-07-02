@@ -13,8 +13,6 @@ const withAuth: MiddlewareFactory = (next: NextMiddleware) => {
         const env = validateEnv(process.env);
         const token = await getToken({ req });
         const isAuth = !!token;
-        
-        console.log(isAuth)
 
         if (isAuth) {
           const resSession = await fetch(
